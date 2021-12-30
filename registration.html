@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-
+        scale=1.0">
+        <title>
+            University Websity Design
+        </title>
+        <script src="https://kit.fontawesome.com/95cb416d82.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            .nav-lines ul li {
+                list-style: none;
+                display: inline-block;
+                padding: 1px 12px;
+                position:relative;
+                top:-100px;
+
+             
+            }
+            .nav-lines ul li a{
+              color: rgb(255, 255, 255);
+              text-decoration: none;
+              font-size: 16px;
+             }
+             .nav-lines ul li::after{
+               content: '';
+               width: 0%;
+               height: 2px;
+               background: #f44336;
+               display: block;
+               margin: auto;
+               transition: 0.5s;
+              }
+              .nav-lines ul li:hover::after{
+                 width:100%;
+
+              }
+            .nav-lines{
+                flex: 1;
+                text-align: right;
+            }
+            body{
+                background-image:url(images/universitypic.jpg);
+                
+                background-position: center;
+                background-size: cover;
+                font-family:sans-serif;
+                margin-top:40px;
+            }
+            .regform{
+                width:800px;
+                background-color: rgba(0, 0, 0, 0.6);
+                margin:auto;
+                color:#FFFFFF;
+                padding: 10px 0px 10px 0px;
+                text-align:center;
+                border-radius: 15px 15px 0px 0px;
+            }
+            .main{
+               background-color: rgb(0,0,0,0.5);
+               width:800px;
+               margin:auto;
+               
+            }
+            form{
+                padding:10px;
+            }
+            #name{
+                width:100%;
+                height:100px;
+            }
+            .name{
+                margin-left: 25px;
+                margin-top:30px;
+                width:125px;
+                color:white;
+                font-size:18px;
+                font-weight:700;
+            }
+            .firstname{
+                position:relative;
+                left:200px;
+                top:-37px;
+                line-height:40px;
+                border-radius: 6px;
+                padding:0 22px;
+                font-size:16px;
+            }
+/*-------course------*/
+
+/*--------------campus----------*/
+
+  /*-----------facilities----------*/
+ 
+  /*----------------testimonials---------*/
+
+/*-----call to action---------*/
+
+/*------------footer----------*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight:  600;
+}
+.icons .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-heart-o{
+    color:#f44336;
+}
+.lastname{
+     position:relative;
+     left:417px;
+     top:-80px;
+     line-height:40px;
+     border-radius: 6px;
+     padding:0 22px;
+     font-size:16px;
+     color:#555;
+}
+.firstlabel{
+    position:relative;
+    color:#E5E5E5;
+    text-transform:capitalize;
+    font-size:14px;
+    left:203px;
+    top:-45px;
+}
+.lastlabel{
+    position:relative;
+    color:#E5E5E5;
+    text-transform:capitalize;
+    font-size:14px;
+    left:175px;
+    top:-45px;
+}
+.address{
+    position: relative;
+    left:200px;
+    top:-37px;
+    line-height:40px;
+    width:480px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color:#555;
+}
+.userid{
+    position: relative;
+    left:200px;
+    top:-37px;
+    line-height:40px;
+    width:480px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color:#555;
+}
+.password{
+    position: relative;
+    left:200px;
+    top:-37px;
+    line-height:40px;
+    width:480px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color:#555;
+}
+.conpassword{
+    position: relative;
+    left:200px;
+    top:-37px;
+    line-height:40px;
+    width:480px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color:#555;
+}
+.dob{
+    position: relative;
+    left:200px;
+    top:-37px;
+    line-height:40px;
+    width:480px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color:#555;
+}
+.email{
+    position: relative;
+    left:200px;
+    top:-37px;
+    line-height:40px;
+    width:480px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color:#555;
+}
+.code{
+    position: relative;
+    left:200px;
+    top:-37px;
+    line-height:40px;
+    width:95px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color:#555;
+}
+.number{
+    position: relative;
+    left:200px;
+    top:-37px;
+    line-height:40px;
+    width:255px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color:#555;
+}
+.area-code{
+    position:relative;
+    color:#E5E5E5;
+    text-transform:capitalize;
+    font-size: 16px;
+    left:54px;
+    top:-4px;
+}
+.phone-number{
+    position:relative;
+    color:#E5E5E5;
+    text-transform:capitalize;
+    font-size: 16px;
+    left:-100px;
+    top:-2px;
+}
+.option{
+    position: relative;
+    left:200px;
+    top:-37px;
+    line-height:40px;
+    width:532px;
+    height:40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color:#555;
+    outline:none;
+    overflow: hidden;
+}
+.option option{
+    font-size:15px;
+}
+#gen{
+    margin-left:25px;
+    color:white;
+    font-size:18px;
+}
+.radio{
+    display:inline-block;
+    padding-right:70px;
+    font-size:25px;
+    margin-left:25px;
+    margin-top:15px;
+    color:white;
+}
+.radio input{
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    cursor:pointer;
+    outline:none;
+}
+button{
+    background-color: #e72434;
+    display:block;
+    margin:20px 0px 0px 20px;
+    text-align:center;
+    border-radius: 12px;
+    border:2px solid #f03c3c;
+    padding:14px 110px;
+    outline:none;
+    color:white;
+    cursor:pointer;
+    transition:0.25px;
+}
+
+/*-----------------about us page----------------*/
+
+
+        </style>
+    </head>
+    <body>
+      <section class="sub-header">
+          <nav>
+              <a href="index.html"><img src="images/logo.png"></a>
+              <div class="nav-lines" id="navlines">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                  <ul>
+                      <li><a href="index.html">HOME</a></li>
+                      <li><a href="about.html">ABOUT</a></li>
+                      <li><a href="course.html">COURSE</a></li>
+                      <li><a href="blog.html">BLOG</a></li>
+                      <li><a href="concate.html">CONTACT</a></li>
+                      <li><a href="registration.html">REGISTRATION</a></li>
+                  </ul>
+              </div>
+              <i class="fa fa-bars" onclick="showMenu()"></i>
+          </nav>
+         <h1></h1>
+      </section>
+      <!-----------registrtion-------------->
+      <section class="reg">
+          <div class="regform"><h1>Registration Form</h1></div>
+          <div class="main">
+              <form>
+                  <div id="name">
+                      <h2 class="name">Name</h2>
+                      <input class="firstname" type="text" name="first_name"><br>
+                      <lable class="firstlabel">first name</lable>
+                      <input class="lastname" type="text" name="last_name">
+                      <label class="lastlabel">last name</label>
+                  </div>
+
+                  <h2 class="name">Address</h2>
+                  <input class="address" type="text" name="address">
+
+                  <h2 id="gen">Gender</h2>
+                   <label class="radio">
+                    <input class="radio-one" type="radio"  name="">
+                    <span class="checkmark"></span>
+                    Male
+                   </label>
+                   <label class="radio">
+                   <input class="radio-two" type="radio"  name="">
+                   <span class="checkmark"></span>
+                   Female
+                   </label>
+
+                  <h2 class="name">Date Of Birth</h2>
+                  <input class="dob" type="text" name="dob">
+
+                  <h2 class="name">Qualifications</h2>
+                  <select class="option" name="qualifications">
+                  <option disabled="disabled" selected="selected">Choose Option</option>
+                  <option>Under Greaduate</option>
+                  <option>Post Graduate </option>
+                  <option>Other Courses</option></select>
+                  
+                
+                  <h2 class="name">Email Id</h2>
+                  <input class="email" type="text" name="email">
+
+                  <h2 class="name">Phone</h2>
+                  <input class="code" trype="text" name="area_code">
+                  <label class="area-code">Area Code</label>
+                  <input class="number" type="text" name="phon">
+                  <label class="phone-number">Phone Number</label>
+
+                  <h2 class="name">User Id</h2>
+                  <input class="userid" type="text" name="userid">
+
+                  <h2 class="name">Password</h2>
+                  <input class="password" type="text" name="password">
+
+                  <h2 class="name">Confirm Password</h2>
+                  <input  class="conpassword" type="text" name="conpassword">
+                  <button type="submit">Submit</button>
+              </form>
+          </div>
+      </section>
+
+ <!---------------about us content------------>
+ 
+  <!-------------Call To Action------------>
+  
+             
+           <!------------Footer---------->
+             <section class="footer">
+                 <h4>About Us</h4>
+                 <p>
+                    For a remarkable About page, all you need to 
+                    do is figure out your company's unique identity,
+                     and then share it with the world.<br> Easy, right? Of 
+                     course not. Your "About Us" page is one of the most
+                      important pages on your website, and it needs to be
+                       well crafted.
+                 </p>
+                 <div class="icons">
+                     <i class="fa fa-facebook"></i>
+                     <i class="fa fa-twitter"></i>
+                     <i class="fa fa-instagram"></i>
+                     <i class="fa fa-linkedin"></i>
+                     
+                 </div>
+                 <p>Made width <i class="fa fa-heart-o"></i>r d x dsre</p>
+             </section>
+
+
+
+
+
+
+      <!-------javaScript------>
+      <script>
+          var navlines = document.getElementById("navlines");
+          function showMenu(){
+              navlines.style.right = "0";
+          }
+          function hideMenu(){
+              navlines.style.right = "-200px";
+          }
+          
+
+          
+      </script>
+    </body>
+</html>

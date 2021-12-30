@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-
+        scale=1.0">
+        <title>
+            University Websity Design
+        </title>
+        <script src="https://kit.fontawesome.com/95cb416d82.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+        <style>
+            *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/university1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-lines{
+    flex: 1;
+    text-align: right;
+}
+.nav-lines ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-lines ul li a{
+    color: rgb(245, 247, 248);
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-lines ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-lines ul li:hover::after{
+    width:100%;
+
+}
+.text-box{
+    width: 90%;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 50px;
+}
+.text.box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: rgb(250, 250, 250);
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(168, 167, 167);
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size:13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+nav .fa{
+    display: none;
+}
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-lines ul li{
+        display: block;
+    }
+    .nav-lines{
+        position: absolute;
+        background: skyblue;
+        height: 100vh;
+        width: 200px;
+        top:0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color:rgb(192, 180, 180);
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-lines ul{
+        padding: 30px;
+
+    }
+}
+/*-------course------*/
+.course{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: rgb(105, 103, 103);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background: #cae2e9;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(15, 7, 7, 0.2);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+/*--------------campus----------*/
+  .campus{
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      padding-top: 50px;
+  }
+  .campus-col{
+      flex-basis: 32%;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      position: relative;
+      overflow: hidden;
+  }
+  .campus-col img{
+      width: 100%;
+      display: block;
+  }
+  .layer{
+      background: transparent;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: 0.5s;
+
+  }
+  .layer:hover{
+      background: rgba(41, 116, 187, 0.7);
+  }
+  .layer h3{
+      width: 100%;
+      font-weight: 500;
+      color: #fff;
+      font-size: 26px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      opacity: 0;
+      transition: 0.5s;
+  }
+  .layer:hover h3{
+  bottom: 49%;
+  opacity:  1;
+  }
+  /*-----------facilities----------*/
+  .facilities{
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      padding-top: 100px;
+  }
+  .facilities-col{
+      flex-basis: 31%;
+      border-radius: 10px;
+      margin-bottom: 5%;
+      text-align: left;
+  }
+  .facilities-col img{
+      width: 100%;
+      border-radius: 10px;
+  }
+  .facilities-col p{
+      padding: 0;
+  }
+  .facilities-col h3{
+      margin-top: 16px;
+      margin-bottom: 15px;
+      text-align: left;
+  }
+  /*----------------testimonials---------*/
+  .testimonials{
+      width: 80%;
+      margin: auto;
+      padding-top: 100px;
+      text-align: center;
+  }
+  .testimonials-col{
+      flex-basis: 44%;
+      border-radius: 10px;
+      margin-bottom: 5%;
+      text-align: left;
+      background: #c0d4e4;
+      padding: 25px;
+      cursor: pointer;
+      display: flex;
+  }
+  .testimonials-col img{
+      height: 40px;
+      margin-left: 5px;
+      margin-right: 30px;
+      border-radius: 50%;
+  }
+  .testimonials-col p{
+      padding: 0;
+  }
+  .testimonials-col h3{
+      margin-top: 15px;
+      text-align: left;
+  }
+  .testimonials-col .fa{
+      color:#f12f2f
+  }
+  @media(max-width: 700px){
+    .testimonials-col img{
+      
+      margin-left: 0px;
+      margin-right: 15px;
+      
+  }
+}
+/*-----call to action---------*/
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/contact.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+@media(max-width: 700px){
+    .cta h1{
+        font-size: 24px;
+    }
+}
+/*------------footer----------*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight:  600;
+}
+.icons .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-heart-o{
+    color:#f44336;
+}
+        </style>
+    </head>
+    <body>
+      <section class="header">
+          <nav>
+              <a href="index.html"><img src="images/logo4.png"></a>
+              <div class="nav-lines" id="navlines">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                  <ul>
+                      <li><a href="index.html">HOME</a></li>
+                      <li><a href="about.html">ABOUT</a></li>
+                      <li><a href="course.html">COURSE</a></li>
+                      <li><a href="blog.html">BLOG</a></li>
+                      <li><a href="concate.html">CONTACT</a></li>
+                      <li><a href="registration.html">REGISTRATION</a></li>
+                  </ul>
+              </div>
+              <i class="fa fa-bars" onclick="showMenu()"></i>
+          </nav>
+          <div class="text-box">
+               <h1>One Of The World's Best University</h1>
+               <p>This year, University of Delhi is planning to increase the number of test 
+                   centres for DUET.<br> This was one of the prominent 
+                   demands of candidates," he said.</p>
+                   <a href="registration.html" class="hero-btn">Visite Us To Know More</a>
+          </div>
+      </section>
+
+  <!--------------Course------------>
+  <section class="course">
+      <h1>Courses We Offer</h1>
+      <p>You can get your favourit fild for your future.We are here for you.</p>
+      <div class="row">
+          <div class="course-col">
+              <h3>Under Graduate</h3>
+            <p>For a student, Class 12  is the threshold to the world 
+                of higher education. There are hundreds of degree, diploma 
+                and certificate options to choose from. When passing out of Class 12,
+                 the students usually have a number of questions in mind</p>
+          </div>
+          <div class="course-col">
+            <h3>Post Graduate</h3>
+          <p>All degree-granting universities in India require accreditation by 
+              institutions authorized by the University Grants Commission (UGC).
+               Educational reforms and enhancements in the quality of degrees and
+                institutes are now attracting foreign students to consider</p>
+        </div>
+        <div class="course-col">
+            <h3>Other Courses</h3>
+          <p>More Professional and vocational qualifications includes Masters of
+               Business Administration (MBAs) as well as postgraduate teacher 
+               training, law and pre-registration nursing courses.</p>
+        </div>
+      </div>
+  </section>
+     <!------------campus------->
+     <section class="campus">
+         <h1>
+             Our Global Campus
+         </h1>
+        <p>Our Campusing Is one Of The Best Caspus. Why Are You Waiting For</p>
+             
+            <div class="row">
+           <div class="campus-col">
+               <img src="images/university10.jpg">
+               <div class="layer">
+                   <h3>CANADA</h3>
+               </div>
+               </div>
+               <div class="campus-col">
+                <img src="images/university6.jpg">
+                <div class="layer">
+                    <h3>NEW YOURK</h3>
+                </div>
+             </div>
+             <div class="campus-col">
+                <img src="images/university7.jpg">
+                <div class="layer">
+                    <h3>GARMAN</h3>
+                </div>
+           </div>
+           </div>
+     </section>
+
+     <!-------------Facilities----------->
+
+          <section class="facilities">
+              <h1>
+                  Our Facilities
+              </h1>
+              <p>
+                  You Can Get Here Best Fecilities Related To Your Study.
+              </p>
+              <div class="row">
+                  <div class="facilities-col">
+                      <img src="images/library.jpg">
+                      <h3>World Class Library</h3>
+                      <p>Gat Your Subject Related Any Kind Of Book.MakeYour Knowledge 
+                          More Stronger.</p> 
+                        </div>
+                        <div class="facilities-col">
+                            <img src="images/event2.jpg">
+                            <h3>Best University Events</h3>
+                            <p>Gat Your Subject Related Any Kind Of Book.MakeYour Knowledge 
+                                More Stronger.</p> 
+                              </div>
+                              <div class="facilities-col">
+                                <img src="images/cafeteria.jpg">
+                                <h3>Tasty and Healthy Food</h3>
+                                <p>Gat Your Testy Healthy and Fress Foods. Silent Area Good Environment.</p> 
+                                  </div>
+              </div>
+          </section>
+          <!--------------testimonials-------->
+          <section class="testimonials">
+              <h1>Get Our Students Reviews</h1>
+              <p>What Our Students Says. Get More Information About Our University.</p>
+
+              <div class="row">
+                  <div class="testimonials-col">
+                      <img src="images/man.jpg">
+                      <div>
+                          <p>
+                            an elite private university located in 
+                            Stanford, California in the San Francisco Bay Area.
+                             It is a mid-size institution with an enrollment of 6,996
+                              undergraduate students.With the help of Studyportals, 
+                              you can search for a university.
+                          </p>
+                          <h3>Justin Div</h3>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star-o"></i>
+                      </div>
+                      </div>
+                      <div class="testimonials-col">
+                        <img src="images/women.jpg">
+                        <div>
+                            <p>
+                                I mean learning online just sucks compared to campus,
+                                 but that's true for every school. My teachers have 
+                                 been incredibly caring and understanding, 
+                                 and Pass-Fail (I'm writing this Spring of 2020) 
+                                 has been a big opportunity.
+                            </p>
+                            <h3>Lissa Eisenberg</h3>
+                            <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star-half-o"></i>
+                        </div>
+                  </div>
+              </div>
+          </section>
+           <!-------------Call To Action------------>
+             <section class="cta">
+                 <h1>Enroll ForOur Various Online Courses<br> Anywhere From The 
+                     World
+                 </h1>
+                 <a href="concate.html" class="hero-btn">CONTECT US</a>
+             </section>
+           <!------------Footer---------->
+             <section class="footer">
+                 <h4>About Us</h4>
+                 <p>
+                    For a remarkable About page, all you need to 
+                    do is figure out your company's unique identity,
+                     and then share it with the world.<br> Easy, right? Of 
+                     course not. Your "About Us" page is one of the most
+                      important pages on your website, and it needs to be
+                       well crafted.
+                 </p>
+                 <div class="icons">
+                     <i class="fa fa-facebook"></i>
+                     <i class="fa fa-twitter"></i>
+                     <i class="fa fa-instagram"></i>
+                     <i class="fa fa-linkedin"></i>
+                     
+                 </div>
+                 <p>Made width <i class="fa fa-heart-o"></i>r d x dsre</p>
+             </section>
+
+
+
+
+
+
+      <!-------javaScript------>
+      <script>
+          var navlines = document.getElementById("navlines");
+          function showMenu(){
+              navlines.style.right = "0";
+          }
+          function hideMenu(){
+              navlines.style.right = "-200px";
+          }
+          
+
+          
+      </script>
+    </body>
+</html>
